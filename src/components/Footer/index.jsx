@@ -8,7 +8,7 @@ const MyFooter = () => {
   const { classes } = useStyles();
   return (
     <Flex
-      fluid
+      fluid={true}
       direction={"column"}
       align={"center"}
       justify={"center"}
@@ -16,7 +16,7 @@ const MyFooter = () => {
       px="xl"
       className={classes.main}
     >
-      <Flex gap={"lg"}>
+      <Flex gap={"16px"} wrap={"wrap"} justify={"center"} align={"center"}>
         <Text className={classes.link}>Home</Text>
         <Text className={classes.link}>Services</Text>
         <Text className={classes.link}>Portfolio</Text>
@@ -30,7 +30,7 @@ const MyFooter = () => {
       </Text>
       <Text color="white">info@decimalsolutions.com</Text>
       <Text color="white">+92 345 5893337, +92 300 4257414</Text>
-      <Text color="white">
+      <Text color="white" align="center">
         office No# 17, 2nd Floor, Zaki Center, I-8 Markaz Islamabad, 44000
       </Text>
       <Flex gap="sm">
@@ -39,7 +39,7 @@ const MyFooter = () => {
         <img src={li} />
       </Flex>
       <Divider color="rgb(255,255,255,0.5)" w={"100%"} />
-      <Text color="white">Copyright Ⓒ DECIMAL SOLUTIONS All Rights Reserved 2022</Text>
+      <Text color="white" align="center">Copyright Ⓒ DECIMAL SOLUTIONS All Rights Reserved 2022</Text>
     </Flex>
   );
 };

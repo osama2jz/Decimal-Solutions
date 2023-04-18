@@ -13,5 +13,16 @@ export const useStyles = createStyles((theme) => ({
     ':hover':{
         color:theme.colors.purple
     }
+  },
+  link2:{
+    cursor:'pointer',
+    borderBottom:`1px solid ${theme.primaryColor}`,
+    paddingBottom:'8px',
+    ':hover':{
+        color:theme.colors.purple
+    }
+  },
+  dropDown:{
+    transition:"0.5s ease-in-out"
   }
 }));
