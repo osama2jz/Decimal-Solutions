@@ -1,6 +1,7 @@
 import React from "react";
+import Slider from "./Slider";
 
 const Landing = () => {
-  return <div>index</div>;
+  return <Slider />;
 };
 export default Landing;
