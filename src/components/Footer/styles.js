@@ -13,8 +13,15 @@ export const useStyles = createStyles((theme) => ({
   link: {
     cursor: "pointer",
     color: "white",
-    ":hover": {
-    //   color: theme.colors.purple,
+    paddingRight: "15px",
+    borderRight: "1px solid white",
+    ["@media (max-width:800px)"]: {
+      fontSize: "12px",
+    },
+    "&:last-child": {
+      cursor: "pointer",
+      color: "white",
+      border: "none",
     },
   },
 }));
